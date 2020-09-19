@@ -166,13 +166,11 @@ void infixToPostfix(char *input, int len) {
          }
          temp[j] = '\0';
          printf("%s ", temp);
-         // fflush(stdout);
          temp[0] = '\0';
          i--;
       }
       else if (isalnum(c)) {
          printf("%c ", c);
-         // fflush(stdout);
       }
       else if (isOperator(c)) {
          if (c == '(')
